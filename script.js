@@ -91,3 +91,11 @@ document.addEventListener('keydown', (event) => {
         clearDisplay();
     }
 })
+
+document.getElementById('theme-toggle').addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+
+    const themeButton = document.getElementById('theme-toggle');
+    const isLight = document.body.classList.contains('light-mode');
+    themeButton.innerText = isLight ? '🌙' : '☀';
+})

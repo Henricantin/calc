@@ -77,3 +77,27 @@ body {
     background-color: #4f4e4e;
     color: white;
 }
+
+body.light-mode {
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+body.light-mode .display {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-mode .btn {
+    background-color: #ddd;
+    color: #000;
+}
+
+body.light-mode .btn.btn.orange {
+    background-color: #ff9500;
+    color: white;
+}
+
+body.light-mode .btn.gray {
+    background-color: #aaa;
+}
