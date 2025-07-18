@@ -69,3 +69,25 @@ function percentage() {
     currentNumber = (parseFloat(currentNumber) / 100).toString();
     updateDisplay();
 }
+
+document.addEventListener('keydown', (event) => {
+    const key = event.key;
+
+    if (!isNaN(key)) {
+        appendNumber(key);
+    } else if (key === ',' || key === '.') {
+        appendNumber(',');
+    } else if (key === '+') {
+        setOperation('+');
+    } else if (key === '-') {
+        setOperation('-');
+    } else if (key === '*' || key === 'x') {
+        setOperation('*');
+    } else if (key === '/') {
+        setOperation('/');
+    } else if (key === 'Enter' || key === '=') {
+        calculate();
+    } else if (key === 'Escape' || key === 'Backspace') {
+        clearDisplay();
+    }
+})
