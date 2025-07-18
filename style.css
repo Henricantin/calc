@@ -86,6 +86,7 @@ body.light-mode {
 body.light-mode .display {
     background-color: #fff;
     color: #000;
+    border-radius: 15px;
 }
 
 body.light-mode .btn {
